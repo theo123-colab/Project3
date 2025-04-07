@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stylish Web Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background-color: #2c3e50;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      padding: 2rem;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .content, .sidebar {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .content {
+      flex: 3;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    h1, h2, h3, h4 {
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Stylish Website</h1>
+    <p>Modern layout with HTML & CSS only</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="content">
+      <h2>What is Web Development?</h2>
+      <p>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management.</p>
+      
+      <h3>Frontend vs Backend</h3>
+      <ul>
+        <li><strong>Frontend:</strong> The user-facing part of the website. Built with HTML, CSS, JavaScript.</li>
+        <li><strong>Backend:</strong> The server-side logic using PHP, Python, Node.js, etc.</li>
+      </ul>
+
+      <h3>Popular Tools</h3>
+      <ol>
+        <li>HTML & CSS</li>
+        <li>JavaScript & React</li>
+        <li>Bootstrap & Tailwind</li>
+        <li>Node.js & Express</li>
+        <li>MySQL & MongoDB</li>
+      </ol>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Quick Facts</h3>
+      <ul>
+        <li>HTML stands for HyperText Markup Language.</li>
+        <li>CSS controls layout and styles.</li>
+        <li>JavaScript adds interactivity.</li>
+        <li>Git is for version control.</li>
+        <li>Responsive design adapts to any screen.</li>
+      </ul>
+
+      <h4>Did You Know?</h4>
+      <p>The first website ever was created by Tim Berners-Lee in 1991 — it was just plain text explaining what the World Wide Web is!</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Stylish Web. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
